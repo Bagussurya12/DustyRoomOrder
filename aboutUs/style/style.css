@@ -1,0 +1,230 @@
+.header {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background-image: url(/aboutUs/assets/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+.header .carousel {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.header .carousel .carousel-inner .carousel-title {
+  font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1300 - 300)));
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.header .carousel .carousel-inner .btn {
+  border-radius: 20px;
+  margin: 15px 0;
+  min-width: 120px;
+}
+
+.header .carousel .carousel-caption {
+  position: static;
+  text-align: left;
+  display: block !important;
+}
+
+.header-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  opacity: 0.8;
+  color: #212529;
+}
+
+.header-mini {
+  min-height: 24rem;
+  height: 24rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  background: #f9bebe;
+}
+
+@media (max-width: 767.98px) {
+  .header {
+    height: auto;
+    padding: 50px 0;
+  }
+  .header .carousel {
+    margin-top: 100px;
+  }
+  .infos {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .infos .socials,
+  .infos .title {
+    width: 100%;
+    text-align: left;
+  }
+  .infos .socials {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header .carousel-control-prev,
+  .header .carousel-control-next {
+    display: none !important;
+  }
+}
+
+/* about */
+.widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  background: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0;
+  margin: 30px 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.widget .icon-wrapper {
+  width: 40px;
+  padding: 0 5px;
+  margin-right: 10px;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.widget .infos-wrapper {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.widget .infos-wrapper h4 {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.widget .infos-wrapper p {
+  margin: 0;
+}
+/* PORTOFOLIO */
+.porto {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  line-height: 0;
+}
+.konten {
+  width: 610px;
+  margin: 10px auto;
+  border: 5px solid black;
+  overflow: auto;
+  text-align: center;
+}
+
+.thumb {
+  width: 200px;
+  float: left;
+  border: 3px solid;
+  box-sizing: border-box;
+}
+.thumb:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+@media screen and (max-width: 1080px) {
+  .porto {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    line-height: 0;
+  }
+  .konten {
+    width: 310px;
+    margin: 10px auto;
+    border: 5px solid black;
+    overflow: auto;
+    text-align: center;
+  }
+  .bigImg {
+    width: 300px;
+  }
+  .thumbnail {
+    width: 300px;
+  }
+  .thumb {
+    width: 100px;
+    float: left;
+    border: 3px solid;
+    box-sizing: border-box;
+  }
+  .thumb:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+}
+
+/* END PORTOFOLIO */
