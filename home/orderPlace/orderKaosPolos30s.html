@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar navbar-dark text-light shadow-L fixed-top" style="background-color: black">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fw-bold" href="../../index.html">DUSTY ROOM Screen Printing</a>
+
+          <button
+            class="navbar-toggler toggler-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-light" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="../../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">PROFILE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../../aboutUs/aboutUs.html">ABOUT US</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="../../login/login.html"> <i class="bi bi-box-arrow-left me-3"></i>LOG-OUT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Navabar -->
+    <!-- Content -->
+    <section class="bodyProduct" style="padding-top: 8rem">
+      <div class="containerProduct m-5">
+        <div class="row justify-content-center m-5">
+          <div class="col-md-6 mb-5">
+            <div class="card" style="width: 20rem">
+              <img src="../../img/kaosPolos30s.jpeg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Kaos Polos 30s</h5>
+                <p class="card-text">Kaos Polos tanpa sablon, Jahitan Rantai, Bahan Cotton Combed 30s. Sedia Semua warna</p>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Catton Combed 24s</li>
+                <li class="list-group-item">
+                  <p class="fw-bold">Rp.400.000., / 12 Pcs</p>
+                </li>
+                <li class="list-group-item">Minimum Order 12 Pcs</li>
+                <li class="list-group-item">Pengerjaan 2 hari</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="productQty mb-3">
+              <p class="fw-bold">Masukan Jumlah Order :</p>
+              <input type="number" class="form-control format-number" id="qty" name="qty" value="12" />
+            </div>
+
+            <div class="colorUpload mb-3">
+              <label for="exampleColorInput" class="form-label fw-bold">Pilih warna Kaos :</label>
+              <input class="form-control" type="text" placeholder="contoh: Merah Maroon" aria-label="default input example" />
+            </div>
+
+            <div class="sizeUpload">
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="exampleSizeInput" class="form-label fw-bold">Masukan Jumlah ukuran :</label>
+                  <input class="form-control" type="text" placeholder="contoh: XL : 5, M : 7" aria-label="default input example" />
+                </div>
+              </div>
+            </div>
+            <div class="description mt-5 mb-5">
+              <div class="form-floating">
+                <p>Masukan Deskripsi :</p>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+            </div>
+            <div class="kernjangInput">
+              <div class="d-grid gap-2">
+                <button class="btn btn-dark" type="button">
+                  <a href="" class="text-decoration-none text-light"><i class="bi bi-cart-plus-fill"></i></a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Content -->
+
+    <!-- Order Input -->
+    <section class="orderInputQty">
+      <div class="container conatinerQty">
+        <div class="row">
+          <div class="col"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENd Order Input -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
