@@ -79,19 +79,19 @@
           <div class="col-md-6">
             <div class="productQty mb-3">
               <p class="fw-bold">Masukan Jumlah Order :</p>
-              <input type="number" class="form-control format-number" id="qty" name="qty" value="12" />
+              <input type="number" class="form-control format-number" id="qty" name="qty" value="12" min="12" required />
             </div>
 
             <div class="colorUpload mb-3">
               <label for="exampleColorInput" class="form-label fw-bold">Pilih warna Kaos :</label>
-              <input class="form-control" type="text" placeholder="contoh: Merah Maroon" aria-label="default input example" />
+              <input class="form-control" type="text" placeholder="contoh: Merah Maroon" aria-label="default input example" required />
             </div>
 
             <div class="sizeUpload mb-3">
               <div class="row">
                 <div class="col-md-6">
                   <label for="exampleSizeInput" class="form-label fw-bold">Masukan Jumlah ukuran :</label>
-                  <input class="form-control" type="text" placeholder="contoh: XL : 5, M : 7" aria-label="default input example" />
+                  <input class="form-control" type="text" placeholder="contoh: XL : 5, M : 7" aria-label="default input example" required />
                 </div>
               </div>
             </div>
@@ -99,13 +99,13 @@
             <div class="designUpload">
               <div class="mb-3">
                 <label for="formFile" class="form-label fw-bold">Upload Design : </label>
-                <input class="form-control" type="file" id="formFile" />
+                <input class="form-control" type="file" id="formFile" required />
               </div>
             </div>
             <div class="description mt-5 mb-5">
               <div class="form-floating">
                 <p>Masukan Deskripsi :</p>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
               </div>
             </div>
             <div class="kernjangInput">

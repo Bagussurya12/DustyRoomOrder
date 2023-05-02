@@ -76,36 +76,62 @@
             </div>
           </div>
 
-          <div class="col-md-6">
-            <div class="productQty mb-3">
-              <p class="fw-bold">Masukan Jumlah Order :</p>
-              <input type="number" class="form-control format-number" id="qty" name="qty" value="12" />
-            </div>
-
-            <div class="colorUpload mb-3">
-              <label for="exampleColorInput" class="form-label fw-bold">Pilih Warna Lanyard :</label>
-              <input class="form-control" type="text" placeholder="contoh: Merah Maroon" aria-label="default input example" />
-            </div>
-
-            <div class="designUpload">
-              <div class="mb-3">
-                <label for="formFile" class="form-label fw-bold">Upload Design : </label>
-                <input class="form-control" type="file" id="formFile" />
+          <div class="col-md-6 mb-5">
+            <form action="">
+              <h5 class="text-center mb-5">Data Pesanan</h5>
+              <div class="productQty mb-3">
+                <p class="fw-bold">Masukan Jumlah Order :</p>
+                <input type="number" class="form-control format-number" id="qty" name="qty" value="12" min="12" />
               </div>
-            </div>
-            <div class="description mt-5 mb-5">
-              <div class="form-floating">
-                <p>Masukan Deskripsi :</p>
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+
+              <div class="colorUpload mb-3">
+                <label for="exampleColorInput" class="form-label fw-bold">Pilih Warna Lanyard :</label>
+                <input class="form-control" type="text" placeholder="contoh: Merah Maroon" aria-label="default input example" required />
               </div>
-            </div>
-            <div class="kernjangInput">
+
+              <div class="designUpload">
+                <div class="mb-3">
+                  <label for="formFile" class="form-label fw-bold">Upload Design : </label>
+                  <input class="form-control" type="file" id="formFile" accept="image/*" name="file" required />
+                </div>
+              </div>
+              <div class="description mt-5 mb-5">
+                <div class="form-floating">
+                  <p>Masukan Deskripsi :</p>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required></textarea>
+                </div>
+              </div>
+              <div class="col">
+                <h5 class="text-center mb-5">Data Pemesan</h5>
+                <div class="orderMan">
+                  <div class="mb-3">
+                    <label for="validationInput" class="form-label fw-bold">Nama Lengkap Pemesan :</label>
+                    <input class="form-control is-invalid" type="text" max="35" id="validationText" placeholder="Masukan Nama Lengkap" required />
+                    <div class="invalid-feedback">Wajib memasukan Nama Lengkap.</div>
+                  </div>
+                  <!-- phone Number -->
+                  <div class="mb-3">
+                    <label for="validationInput" class="form-label fw-bold">Nomor Handphone :</label>
+                    <input class="form-control is-invalid" type="number" name="phoneNumber" id="validationNumberPhone" placeholder="Masukan Nomor Handphone" required />
+                    <div class="invalid-feedback">Wajib memasukan Nomor Telpon.</div>
+                  </div>
+                  <!-- Email -->
+                  <div class="mb-3">
+                    <label for="validationInput" class="form-label fw-bold">Email :</label>
+                    <input class="form-control is-invalid" type="email" name="emailPemesan" id="validationNumberPhone" placeholder="Masukan Nomor Email" required />
+                    <div class="invalid-feedback">Wajib memasukan Email.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="validationTextarea" class="form-label fw-bold">Alamat :</label>
+                    <textarea class="form-control is-invalid" id="validationTextarea" placeholder="masukan alamat lengkap" required></textarea>
+                  </div>
+                </div>
+              </div>
+
               <div class="d-grid gap-2">
-                <button class="btn btn-dark" type="submit">
-                  <a href="../../payment/payment.html" class="text-decoration-none text-light">Order</a>
-                </button>
+                <button class="btn btn-dark" type="submit">Pesan</button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
